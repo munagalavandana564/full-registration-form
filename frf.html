@@ -1,0 +1,168 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student registration form</title>
+</head>
+ <style>
+    body{
+        background-image:url("stubg.webp") ;
+        background-size: cover;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ 
+    }
+     .container{
+        width:700px;
+        margin: auto;
+        height: 1000px;
+    }
+    h2{
+        text-align: center;
+    }
+    table{
+        background-color: green;
+        width: 50px;
+        border-radius: 4px;
+
+    }
+
+    label{
+        color: white;
+        font-weight: bold;
+        width: 5x;
+    }
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=password],
+    input[type=number],
+    textarea{
+        padding: 3px;
+        border:1px solid white;
+        border-radius: 12px;
+        width: 95%;
+        margin-bottom: 2px;
+   
+    }
+    input[type="radio"]
+    {
+        width: 15%;
+    }
+    select{
+        width:95%;
+        padding: 5px;
+        border:1px solid black;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+    input[type=submit]{
+        width: 350px;
+        color: white;
+        background-color:black;
+        cursor: pointer;
+   
+    }
+    input[type=submit]:hover{
+        background-color:green;
+   
+   
+    }
+   
+</style>
+<div class="container">
+ <center><h1 style="background: white;">STUDENT REGISTRATION FORM</h1>
+  <form>
+    <table>
+      <tr>
+        <td><label>Name:</label></td>
+        <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+      </tr>
+      <tr>
+        <td><label>Email:</label></td>
+        <td><input type="text" name="email" id="email" placeholder="Enter your email"></td>
+      </tr>
+      <tr>
+        <td><label>Password:</label></td>
+        <td><input type="password" name="password" id="password" placeholder="Enter password"></td>
+      </tr>
+      <tr>
+        <td><label>Confirm-Password:</label></td>
+        <td><input type="password" name="password" id="password" placeholder="Re-enter password"></td>
+      </tr>
+      <tr>
+        <td><label>Phone Number:</label></td>
+        <td><input type="number" name="phoneNumber" id="phoneNumber" placeholder="Enter your phonenumber"></td>
+      </tr>
+      <tr>
+        <td><label>Gender:</label></td>
+        <td>Male: <input type="radio" name="gender" value="male">
+          Female: <input type="radio" name="gender" value="female">
+          Other: <input type="radio" name="gender" value="other"></td>
+      </tr>
+      <tr>
+        <td><label>language</label></td>
+        <td>
+          <select name="language" id="language">
+            <option value="">Select language</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Hindi">Hindi</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="English">English</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Qualification</label></td>
+        <td>
+          <select name="qualification" id="qualification">
+            <option value="">Select your qualification</option>
+            <option value="SSC">SSC</option>
+            <option value="Intermediate">INTERMEDIATE</option>
+            <option value="UG">UG</option>
+            <option value="PG">PG</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Adress:</label></td>
+        <td><input type="text" name="address" id="address" placeholder="Enter your address"></td>
+      </tr>
+      <tr>
+        <td><label>District</label></td>
+        <td>
+          <select name="District" id="District">
+            <option value="">Select District</option>
+            <option value="Nellore">Nellore</option>
+            <option value="Koyambathur">Koyambathur</option>
+            <option value="tiruvananthapuram">Tiruvananthapuram</option>
+            <option value="Vizag">Vizag</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>state</label></td>
+        <td>
+          <select name="state" id="state">
+            <option value="">Select State</option>
+            <option value="Andhrapradesh">Andhrapradesh</option>
+            <option value="TamilNadu">TamilNadu</option>
+            <option value="Kerala">Kerala</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Zip Code:</label></td>
+        <td><input type="number" name="zipcode" id="zipcode" placeholder="Enter your zipcode"></td>
+      </tr>
+      <tr>
+        <td><label for="about">About:</label></td>
+        <td><textarea name="about" id="about" placeholder="Write about you"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+      </tr>
+    </table>
+  </form></center>
+</div>
+</html>
